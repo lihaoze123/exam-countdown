@@ -73,7 +73,7 @@ if os.path.isfile("./config.txt"):
         while True:
             edit_wallpaper(text=text, year=year, month=month, day=day)
             setWallpaper(
-                "C:\\Users\\25952\\Desktop\\Zhongkao_countdown\\images\\result.jpg")
+                os.path.realpath("./images/result.jpg"))
             time.sleep(1)
     else:
         exit()

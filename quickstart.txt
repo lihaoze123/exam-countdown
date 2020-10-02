@@ -1,4 +1,0 @@
-1. 安装Python
-2. 运行 pip install -r requirements.txt
-3. 将 中考倒计时.pyw 放至 启动文件夹 “win+r, 输入shell:startup”
-4. 双击运行

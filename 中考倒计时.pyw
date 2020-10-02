@@ -60,22 +60,21 @@ def exit():
         f.write('{"text": "", "year": "", "month": "", "day": ""}')
     input("输入q退出: \n")
 
-
 if os.path.isfile("./config.txt"):
-    with open("./config.txt", "r", encoding="utf-8") as f:
-        index = f.read()
-        index = eval(index)
-        text = index["text"]
-        year = index["year"]
-        month = index["month"]
-        day = index["day"]
-    if index["text"]:
-        while True:
-            edit_wallpaper(text=text, year=year, month=month, day=day)
-            setWallpaper(
-                os.path.realpath("./images/result.jpg"))
-            time.sleep(1)
-    else:
-        exit()
+    while True:
+        with open("./config.txt", "r", encoding="utf-8") as f:
+            index = f.read()
+            index = eval(index)
+            text = index["text"]
+            year = index["year"]
+            month = index["month"]
+            day = index["day"]
+        if index["text"]:
+                edit_wallpaper(text=text, year=year, month=month, day=day)
+                setWallpaper(
+                    os.path.realpath("./images/result.jpg"))
+                time.sleep(1)
+        else:
+            exit()
 else:
     exit()

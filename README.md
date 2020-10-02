@@ -6,4 +6,4 @@
 运行也非常简单, 参阅[quickstart.md][1]    
 安装完依赖的文件之后**Windows系统**直接双击```中考倒计时.pyw```即可    
 
-  [1]: quickdown.md
+  [1]: quickstart.md

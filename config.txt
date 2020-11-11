@@ -1,0 +1,9 @@
+[
+	{"text": "期中\n\t--语文考试\n\t\t", "year": "2020", "month": "11", "day": "12", "hour": "14", "min": "30", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+	{"text": "期中\n\t--数学考试\n\t\t", "year": "2020", "month": "11", "day": "13", "hour": "16", "min": "50", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+	{"text": "期中\n\t--英语考试\n\t\t", "year": "2020", "month": "11", "day": "13", "hour": "14", "min": "30", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+	{"text": "期中\n\t--物理考试\n\t\t", "year": "2020", "month": "11", "day": "13", "hour": "11", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+	{"text": "期中\n\t--政治考试\n\t\t", "year": "2020", "month": "11", "day": "12", "hour": "16", "min": "50", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+	{"text": "期中\n\t--历史考试\n\t\t", "year": "2020", "month": "11", "day": "13", "hour": "9", "min": "50", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+	{"text": "期中\n\t--化学考试\n\t\t", "year": "2020", "month": "11", "day": "13", "hour": "16", "min": "30", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"},
+]

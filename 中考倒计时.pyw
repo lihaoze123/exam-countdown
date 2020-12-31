@@ -59,6 +59,7 @@ def edit_wallpaper(year, month, day, min, hour, text, sentence, x, y, file):
     day, hour, min, sec = get_the_remaining_time(
         year=year, month=month, day=day, min=min, hour=hour)
     draw.text((100, 50), sentence, font=font2, fill=(0, 0, 0))
+    draw.text((500, 50), "S H I F T\n\t康龙帅", font=ImageFont.truetype(fontpath2, 100), fill=(0, 0, 0))
     if day>=0:
         draw.text((x, y), "距离{text}仅剩:\n\t\t{day}天\n\t\t{hour}小时\n\t\t{min}分\n\t\t{sec}秒".format(
             day=day, min=min, sec=sec, hour=hour, text=text), font=font, fill=(0, 0, 0))
@@ -92,10 +93,12 @@ if os.path.isfile("./config.txt"):
     while True:
         index = eval(open("./config.txt", "r", encoding="utf-8").read())
         for i in index:
-            for a in range(6):
-                main(i)
-                main({"text": "中考", "year": "2021", "month": "06", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='result.jpg')
-                setWallpaper(os.path.realpath("./images/result.jpg"))
-                time.sleep(0.5)
+            for p in range(2):
+                for a in range(3):
+                    main(i)
+                    if p:main({"text": "中考", "year": "2021", "month": "06", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='result.jpg')
+                    else:main({"text": "一模", "year": "2021", "month": "01", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='result.jpg')
+                    setWallpaper(os.path.realpath("./images/result.jpg"))
+                    time.sleep(0.5)
 else:
     exit()

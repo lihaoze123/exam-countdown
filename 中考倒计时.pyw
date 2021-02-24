@@ -51,7 +51,7 @@ def edit_wallpaper(year, month, day, min, hour, text, sentence, x, y, file):
     font = ImageFont.truetype(fontpath, 50)
     font2 = ImageFont.truetype(fontpath2, 150)  # 字体大小
     
-    color=(0, 255, 255)
+    color=(245, 245, 245)
     
     img_pil = Image.fromarray(bk_img)
     draw = ImageDraw.Draw(img_pil)

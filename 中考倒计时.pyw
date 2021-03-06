@@ -48,7 +48,7 @@ def edit_wallpaper(year, month, day, min, hour, text, sentence, x, y, file):
     fontpath = "./font/font.TTF"  # 设置字体
     fontpath2 = "./font/SIMYOU.TTF"  # 设置字体
     
-    font = ImageFont.truetype(fontpath, 50)
+    font = ImageFont.truetype(fontpath, 80)
     font2 = ImageFont.truetype(fontpath2, 150)  # 字体大小
     
     color=(204, 228, 248)
@@ -93,8 +93,8 @@ if os.path.isfile("./config.txt"):
         index = eval(open("./config.txt", "r", encoding="utf-8").read())
         for i in index:
             for a in range(3):
-                main(i)
-                main({"text": "中考", "year": "2021", "month": "06", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='result.jpg')
+                #main(i)
+                main({"text": "中考", "year": "2021", "month": "06", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='1.png')
                 setWallpaper(os.path.realpath("./images/result.jpg"))
                 time.sleep(0.5)
 else:

@@ -63,6 +63,7 @@ def edit_wallpaper(year, month, day, min, hour, text, sentence, x, y, file):
         draw.text((x, y), "距离{text}仅剩:\n\t\t{day}天\n\t\t{hour}小时\n\t\t{min}分\n\t\t{sec}秒".format(
             day=day, min=min, sec=sec, hour=hour, text=text), font=font, fill=color)
     else:draw.text((550, 600), text+"考试已结束", font=font, fill=color)
+    draw.text((1300, 100), open('./config.txt', "r", encoding='utf-8').read(), font=ImageFont.truetype(fontpath, 60), fill=color)
     bk_img = np.array(img_pil)
     # 展示图象
     cv2.waitKey()
@@ -90,12 +91,10 @@ def main(i, x=550, y=600, file='1.png'):
 
 if os.path.isfile("./config.txt"):
     while True:
-        index = eval(open("./config.txt", "r", encoding="utf-8").read())
-        for i in index:
-            for a in range(3):
-                #main(i)
-                main({"text": "中考", "year": "2021", "month": "06", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='1.png')
-                setWallpaper(os.path.realpath("./images/result.jpg"))
-                time.sleep(0.5)
+        for a in range(3):
+            #main(i)
+            main({"text": "中考", "year": "2021", "month": "06", "day": "25", "hour": "00", "min": "00", "sentence": "态 努\n度 力\n决 造\n定 就\n高 实\n度 力"}, x=550, y=300, file='1.png')
+            setWallpaper(os.path.realpath("./images/result.jpg"))
+            time.sleep(0.5)
 else:
     exit()

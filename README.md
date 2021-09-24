@@ -25,10 +25,6 @@
 参阅 [**quickstart.md**][1]    
 或者安装完依赖的文件之后直接双击```中考倒计时.pyw```即可      
 
-******
-  
-***P.S***: 本脚本基于Python3.8.6制作, 只支持Windows10系统
-
 [1]: quickstart.md    
 [2]: https://www.python.org     
 [windows]: https://img.shields.io/badge/Windows-10-0078D6?logo=windows    
